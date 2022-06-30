@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>ma.itroad</groupId>
+  <artifactId>discovery-server</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20211209.131727</timestamp>
+      <buildNumber>2</buildNumber>
+    </snapshot>
+    <lastUpdated>20211209131727</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>0.0.1-20211209.131727-2</value>
+        <updated>20211209131727</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>0.0.1-20211209.131727-2</value>
+        <updated>20211209131727</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <classifier>exec</classifier>
+        <extension>jar</extension>
+        <value>0.0.1-20211130.144426-1</value>
+        <updated>20211130144426</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>

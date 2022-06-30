@@ -1,0 +1,52 @@
+fm6:
+  sga:
+    smsprovider:
+      username: fake.smtp777888@gmail.com
+      password:
+      sender: FM6
+      message:
+        max: 3
+        time: 24
+        chrono-unit: HOURS
+    mail:
+      sender: fake.smtp777888@gmail.com
+      support: ahmed.khayou@gmail.com, a.khayou@itroadgroup.com
+      subject: ESafe document sharing
+    message:
+      max-retry: 10
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: fake.smtp777888@gmail.com
+    password: 1A2Z3E4R
+    protocol: smtp
+
+    properties.mail.smtp:
+      auth: true
+      starttls.enable: true  
+#  mail:
+#    username:
+#    password:
+#    host: ${fm6.sga.mail.host:localhost}
+#    port: ${fm6.sga.mail.port:1025}
+#    test-connection: true
+  freemarker:
+    template-loader-path: classpath:/templates/
+---
+#spring:
+#  config:
+#    activate:
+#      on-profile: prod
+#  mail:
+#    username:
+#    password:
+#    host: ${fm6.sga.mail.host:localhost}
+#    port: ${fm6.sga.mail.port:1025}
+#    test-connection: true
+#  freemarker:
+#    template-loader-path: classpath:/templates/

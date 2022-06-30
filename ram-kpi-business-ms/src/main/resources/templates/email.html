@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Email Template</title>
+</head>
+<body>
+<h5>Hello <span th:text="${user}">User</span>,</h5>
+<p>Your administrator has just requested that you update your Kpi account by performing the following action(s): Verify
+    Email. Click on the link below to start this process.</p>
+
+<a th:href="${link}">Link to account update</a>.
+<p>This link will expire within 12 hours.
+<p>
+
+<p>If you are unaware that your administrator has requested this, just ignore this message and nothing will be
+    changed.</p>
+</body>
+</html>
+

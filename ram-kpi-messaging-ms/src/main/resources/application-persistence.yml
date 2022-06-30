@@ -1,0 +1,55 @@
+#
+## --- Dev Environnement ----------------------------------------------------------------------
+## ********************************************************************************************
+#
+#spring:
+##  profiles: dev
+##  profiles.include: default
+#
+#  # DEV : Persistance layer Config ----------------------------------------------------------
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/fm6
+#    username: postgres
+#    password: root
+#    driver-class-name: org.postgresql.Driver
+#  jpa:
+#    database-platform: org.hibernate.dialect.PostgreSQLDialect
+#    properties:
+#      hibernate.integration.envers.enabled: false
+#    hibernate:
+#      ddl-auto: none
+#
+#  # DEV : Data Migration Config -------------------------------------------------------------
+#  liquibase:
+#    enabled: false
+#    liquibase-schema: fm6
+#
+#
+#---
+## --- PROD Environnement ---------------------------------------------------------------------
+## ********************************************************************************************
+## localy prod = dev
+#spring:
+##  profiles: prod
+##  profiles.include: dev
+#
+#---
+## --- OpenAPI V3 Config Backup : for a possible futur local OpenAPI use case  ----------------------
+## **************************************************************************************************
+#
+#spring:
+#  profiles: disabled
+#
+#springdoc:
+#  #pathsToMatch: /api/v0
+#  api-docs:
+#    enabled: true
+#    groups.enabled: true
+#    path: /apidoc
+#
+#  swagger-ui:
+#    enabled: true
+#    doc-expansion: none
+#    tagsSorter: alpha
+#    operationsSorter: alpha
+#    path: /swgui.html

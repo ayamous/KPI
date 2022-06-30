@@ -1,0 +1,15 @@
+package ma.itroad.ram.kpi;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
+
+@SpringBootApplication
+@EnableEurekaServer
+public class RamKpiDiscoveryMsApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(RamKpiDiscoveryMsApplication.class, args);
+    }
+
+}

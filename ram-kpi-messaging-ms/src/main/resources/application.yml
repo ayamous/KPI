@@ -1,0 +1,14 @@
+server:
+  port: 9093
+  compression:
+    enabled: true
+spring:
+  profiles:
+    include: messaging, persistence, dev
+  application:
+    name: ram-kpi-messaging
+management:
+  endpoint:
+    health:
+      show-details: always
+

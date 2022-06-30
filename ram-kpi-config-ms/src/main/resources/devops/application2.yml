@@ -1,0 +1,14 @@
+# CONFIGSERVER MICROSERVICE : Default Setting -----------------------------------------------------
+# ********************************************************************************************
+server.port: 8012
+spring.application.name: config-server
+spring:
+  cloud:
+    config:
+      server.git:
+        clone-on-start: false
+        username: s.hamzaoui@itroadgroup.com
+        password: s.hamzaoui2021
+        default.label: master
+        uri: http://gitlab.itroad.ma/Somaya/config-server.git
+        profile: dev

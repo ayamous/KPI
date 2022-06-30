@@ -1,0 +1,14 @@
+# CONFIGSERVER MICROSERVICE : Default Setting -----------------------------------------------------
+# ********************************************************************************************
+server:
+  port: 8012
+spring:
+  profiles:
+    active: native
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations: 'file:/appconf'
